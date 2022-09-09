@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var widthOutlet: UITextField!
     @IBOutlet weak var heightOutlet: UITextField!
     @IBOutlet weak var volumeOutlet: UILabel!
+    @IBOutlet weak var baseOutlet: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,10 @@ class ViewController: UIViewController {
     @IBAction func calc(_ sender: UIButton) {
         volumeOutlet.text = ("Your volume is: \(((Double(lengthOutlet.text!)! * Double(widthOutlet.text!)! * Double(heightOutlet.text!)!)/3)) units")
     }
+    @IBAction func calc2(_ sender: UIButton) {
+        baseOutlet.text = ("Your base area is: \((Double(lengthOutlet.text!)! * Double(widthOutlet.text!)!)) units")
+    }
+    
     
     @IBAction func showImage(_ sender: UIButton) {
         if( imageButtonOutlet.titleLabel!.text == "Show Image"){

@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cfz-t0-GeG">
-                                <rect key="frame" x="50" y="144" width="314" height="61"/>
+                                <rect key="frame" x="50" y="144" width="314" height="92"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume of a Rectangular Prism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50O-JY-Avm">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
@@ -32,7 +32,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niv-xx-pEp">
                                         <rect key="frame" x="0.0" y="30" width="314" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Calculate">
+                                        <buttonConfiguration key="configuration" style="plain" title="Calculate Volume">
                                             <backgroundConfiguration key="background" cornerRadius="100">
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <color key="strokeColor" systemColor="labelColor"/>
@@ -43,10 +43,24 @@
                                             <action selector="calc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AeC-cs-w3Y"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-Y2-7KA">
+                                        <rect key="frame" x="0.0" y="61" width="314" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Calculate Base Area">
+                                            <backgroundConfiguration key="background" cornerRadius="100">
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="strokeColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="calc2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwV-zO-9tZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpE-eC-DXu">
-                                <rect key="frame" x="44.5" y="310" width="325" height="34"/>
+                                <rect key="frame" x="44.5" y="341" width="325" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Length" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RK0-4i-aEE">
                                         <rect key="frame" x="0.0" y="0.0" width="141" height="34"/>
@@ -69,14 +83,14 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your volume is: 0 units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-CH-SON">
-                                <rect key="frame" x="63" y="434" width="288" height="30"/>
+                                <rect key="frame" x="63" y="465" width="288" height="30"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-MZ-NVw">
-                                <rect key="frame" x="59.5" y="544" width="295" height="31"/>
+                                <rect key="frame" x="59.5" y="575" width="295" height="31"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyramid" translatesAutoresizingMaskIntoConstraints="NO" id="kWX-Qb-YX5">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="0.0"/>
@@ -97,17 +111,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your base area is: 0 units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7En-JK-faZ">
+                                <rect key="frame" x="63" y="500" width="288" height="30"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7En-JK-faZ" firstAttribute="top" secondItem="Ujd-CH-SON" secondAttribute="bottom" constant="5" id="3GR-KA-j0u"/>
                             <constraint firstItem="cfz-t0-GeG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="6Lu-Fl-TeS"/>
                             <constraint firstItem="Ujd-CH-SON" firstAttribute="top" secondItem="SpE-eC-DXu" secondAttribute="bottom" constant="90" id="8An-Ic-kQy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SpE-eC-DXu" secondAttribute="trailing" constant="44.5" id="8HI-CL-f8I"/>
                             <constraint firstItem="Ujd-CH-SON" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="AFH-bO-hbX"/>
+                            <constraint firstItem="7En-JK-faZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="FIa-57-faP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ujd-CH-SON" secondAttribute="trailing" constant="63" id="KcO-J2-GUc"/>
                             <constraint firstItem="MsE-MZ-NVw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59.5" id="Ugl-C6-Oeu"/>
                             <constraint firstItem="cfz-t0-GeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ckj-dg-1ii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7En-JK-faZ" secondAttribute="trailing" constant="63" id="jBZ-Lg-6vL"/>
                             <constraint firstItem="MsE-MZ-NVw" firstAttribute="top" secondItem="Ujd-CH-SON" secondAttribute="bottom" constant="80" id="oqf-ld-kuh"/>
                             <constraint firstItem="SpE-eC-DXu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44.5" id="prp-Fm-lMU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cfz-t0-GeG" secondAttribute="trailing" constant="50" id="wlf-I8-HnJ"/>
@@ -116,6 +140,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseOutlet" destination="7En-JK-faZ" id="hrr-YN-NEW"/>
                         <outlet property="heightOutlet" destination="8Yx-fS-9uJ" id="Bpx-yn-Y6I"/>
                         <outlet property="imageButtonOutlet" destination="auY-sw-fcV" id="qXe-8Z-kfG"/>
                         <outlet property="imageOutlet" destination="kWX-Qb-YX5" id="a2G-5G-OSj"/>
