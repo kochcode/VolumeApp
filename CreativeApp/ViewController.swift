@@ -19,8 +19,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        hideKeyboard()
     }
+    
+    func hideKeyboard(){
+     //Declare a recognizer which will trigger dismissMyKeyboard() function
+     let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+     target: self,
+     action: #selector(dismissMyKeyboard))
+     //Adding a tap gesture recognizer to the parent view
+     view.addGestureRecognizer(tap)
+     }
+     @objc func dismissMyKeyboard(){
+     //endEditing dismisses the active keyboard
+     view.endEditing(true)
+     }
+    
     @IBAction func calc(_ sender: UIButton) {
         volumeOutlet.text = ("Your volume is: \(((Double(lengthOutlet.text!)! * Double(widthOutlet.text!)! * Double(heightOutlet.text!)!)/3)) units")
     }

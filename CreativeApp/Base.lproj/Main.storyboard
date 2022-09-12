@@ -41,7 +41,7 @@
                                             <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="calc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AeC-cs-w3Y"/>
+                                            <action selector="calc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Se-XM-81r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-Y2-7KA">
